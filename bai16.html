@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: orange;">
+    <form action="" method="post">
+        <h1>Travel reservation form</h1>
+        <h3>*denotes mandotory</h3>
+        <p>Full name*:</p>
+        <input type="text" name="txtName" id="Name" placeholder="FirstName LastName">
+        <p>Email address*:</p>
+        <input type="text" name="txtEmail" id="Email" placeholder="EMAIL_ADDRESS">
+        <p>Select Tour Package </p>
+        <select name="checkTour" id="Tour">
+            <option value="Goa">Goa</option>
+            <option value="HaNoi">HaNoi</option>
+            <option value="TpHCM">TpHCM</option>
+        </select>
+        <p>Arrival date*:</p>
+        <input type="text" name="txtDate" id="Date" placeholder="m/d/y">
+        <p>Number of person*:</p>
+        <input type="text" name="txtNum" id="Number" placeholder="UNKNOWN_TYPE">
+        <p>What would tou want to avail?*</p>
+        <p>Boarding <input type="checkbox"></p>
+        <p>Fooding <input type="checkbox"></p>
+        <p>Sight seecing <input type="checkbox"></p>
+        <p>Discout Coupon code</p>
+        <input type="text" name="txtCode" id="Code" placeholder="UNKNOWN_TYPE">
+        <p>Terms and condition*</p>
+        <form >
+           
+            <input type="radio" name="check" value="I agree"/>I agree 
+            <input type="radio" name="check"  value="I disagree"/> I disagree
+        </form>
+        <input type="submit" name="submit" id="submit" value="Complete resevation">
+    </form>
+</body>
+</html>
