@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        body{
+            background-image: url(../img/nen.png);
+        }
+        .wrapper{
+            height: 700px;
+            width: 1089px;
+            background-color: darkblue;
+        }
+        nav{
+            height: 50px;
+            width: 100%;
+            background-color: cadetblue;
+            line-height: 50px;
+        }
+        header{
+            height: 150px;
+            width: 100%;
+            background-color: aquamarine;
+            background-image: url(../img/Header.jfif);
+            text-shadow: 1px 2px 1px rgb(229, 252, 28);
+            text-align: center;
+            font-weight: bold;
+            line-height: 150px;
+        }
+        .content{
+            height: 400px;
+            width: 100%;
+            background-color: chartreuse;
+        }
+        .wrapper .content aside article h1{
+            padding-bottom: 9px;
+            text-align: center;
+            text-shadow: 1px 1px 1px royalblue;
+        }
+        aside{
+            width: 30%;
+            height: 100%;
+            float: left;
+            background-color: burlywood;
+        }
+        section{
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+        footer{
+            height: 100px;
+            width: 100%;
+            background-color: violet;
+        }
+        .menu li{
+            float: left;
+            height: 100%;
+            width: 150px;
+            list-style: none;
+            text-indent: 20px;
+            position: relative;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: yellow;
+        }
+        .menu li :hover{
+            background-color: greenyellow;
+        }
+        li:hover>a{
+            color: firebrick;
+            font-style: italic;
+        }
+        .menu li .sub{
+            display: none;
+            position: absolute;
+        }
+        .menu li:hover .sub{
+            display: block;
+        }
+        .wrapper nav span form #subGui{
+           padding: 1px;
+           border-radius: 40%;
+           color: red;z
+        }
+        header:hover{
+            transform: rotate(180deg);
+            text-transform: lowercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVER</a></li>
+                <li><a href="#">CONTACT</a>
+                    <ul class="sub">
+                        <li><a href="">CONTACT 1</a></li>
+                        <li><a href="">CONTACT 2</a></li>
+                        <li><a href="">CONTACT 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+            <span>
+                <form action="">
+                     <label for="lbEmail1">Email</label>
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Nhập email của bạn">
+                    <input type="submit" value="Gửi" id="subGui">
+                </form>
+               
+            </span>
+        </nav>
+        <header>
+            <h1>BIỂU MẪU</h1>
+        </header>
+        <div class="content">
+            <aside>
+                <article>
+                    <h1>Hoạt động 1</h1>
+                    <img src="../img/anh.png" alt="">
+                </article>
+                <article>
+                    <h1>Hoạt động 1</h1>
+                    <img src="../img/anh.png" alt="">
+                </article>
+                <article>
+                    <h1>Hoạt động 1</h1>
+                    <img src="../img/anh.png" alt="">
+                </article>
+            </aside>
+            <section>
+                <form action="">
+                    <fieldset>
+                    <legend>Thông tin</legend>
+                    <label for="lbTen">Họ và tên:</label>
+                    <input type="text" name="txtName" required placeholder="Nhập họ và tên"> <br>
+                    <label for="lbEmail">Email:</label>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder="Nhập email" > <br>
+                    <label for="lbDC">Địa chỉ:</label>
+                    <input type="text" name="txtDC" id="txtDC" required placeholder="Nhập địa chỉ"> <br>
+                    <center><input type="submit" value="Đăng ký"></center>
+                </fieldset>
+                </form>
+                <fieldset>
+                    <legend><i>Contact Information</i></legend>
+                    <table>
+                        <tr>
+                            <td>First Name: <input type="text" value="" size="20" maxlength="20"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name: <input type="text" value="" size="20" maxlength="20"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail: <input type="text" value="" size="20" maxlength="20"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+
+</body>
+</html>
