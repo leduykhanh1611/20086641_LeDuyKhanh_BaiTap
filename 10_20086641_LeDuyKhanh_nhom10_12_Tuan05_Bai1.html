@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kiemTraHT(){
+            let mauHT = /^([A-Za-z]+)((\s{1}[A-Za-z]+){1,})$/;
+            let chuoi = document.getElementById('txtHT').value.trim();
+            if(mauHT.test(chuoi)==true){
+                spHT.innerText = "Bạn đã nhập đúng";
+            }else{
+                spHT.innerText = "Bạn nhập sai mẫu";
+            }
+        }
+
+        function kiemTraTK(){
+            let mauTK = /^[a-z0-9_-]{3,16}$/
+            let chuoi = document.getElementById('txtTK').value.trim();
+            if(mauTK.test(chuoi)==true){
+                spTK.innerText = "Bạn đã nhập đúng";
+            }else{
+                spTK.innerText = "Bạn nhập sai mẫu";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+      <fieldset>
+        <legend>Nhập thông tin</legend>
+        <label for="lblHT">Họ tên cần kiểm tra:</label>
+        <input type="text" name="txtHT" id="txtHT" onblur="return kiemTraHT();">
+        <span id="spHT" style="color: brown; font-weight: bold;">*</span> <br> <br>
+        <label for="lblTK">Tài khoảng cần kiểm tra:</label>
+        <input type="text" name="txtTK" id="txtTK" onblur="return kiemTraTK();">
+        <span id="spTK" style="color: brown; font-weight: bold;">*</span> <br> <br>
+      </fieldset>
+    </form>
+</body>
+</html>
